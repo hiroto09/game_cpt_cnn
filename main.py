@@ -19,7 +19,7 @@ if not capture.isOpened():
     print("キャプチャーボードが開けませんでした")
     exit()
 
-interval = 60  # 1分ごと
+interval = 5  # 1分ごと
 last_pred_time = time.time()
 
 # ---- POST 先の API ----
