@@ -4,7 +4,10 @@ import datetime
 import numpy as np
 import requests
 import os
+from dotenv import load_dotenv
 from tensorflow.keras.models import load_model
+
+load_dotenv() 
 
 # ---- CNN モデルの準備 ----
 model = load_model("./saved_model/game_classifier.h5")
